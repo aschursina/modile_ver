@@ -374,7 +374,44 @@
 
   <div class="popup__main">
     <div class="popup">
-    <form class="popup__form" action=""></form>
+      <div class="popup__content">
+        <label for="popup" class="popup__close"><img src="svg/form-x.svg" alt="Закрыть">
+        </label>
+        <h2 class="popup__tittle">Ваш фидбек</h2>
+        <form class="popup__form">
+          <label class="select__group"> 
+            <span class="question">Как часто вы заходите на сайт?</span>
+          <select class="select__list">
+            <option value="Почти каждый день" selected >Почти каждый день</option>
+            <option value="каждый день">Каждый день</option>
+            <option value="Раз в неделю">Раз в неделю</option>
+            <option value="Раз в месяц">Раз в месяц</option>
+          </select>
+          <img class="arrows" src="svg/form-arrows.svg" alt="Выбрать">
+        </label>
+        
+        <span class="question">Вы подписаны на e-mail рассылку?</span>
+        <div class="radio__container">
+           <label class="radio__group">
+             <input type="radio" class="checkbox" name="answer" checked>
+              <img class="radio__svg checked" src="svg/form-empty-circle.svg" alt="circle">
+             <span class="radio__text">Да</span>
+           </label>
+           <label class="radio__group">
+            <input type="radio" class="checkbox" name="answer">
+            <img class="radio__svg checked" src="svg/form-empty-circle.svg" alt="circle">
+            <span class="radio__text">Нет</span>
+         </label>
+      </div>
+
+      <label class="field__group">
+        <span class="question">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+        <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
+      </label>
+      <button class="button__form" type="submit">Отправить</button>
+
+        </form>
+  </div>
   </div>
   </div>
 
