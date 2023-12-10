@@ -139,18 +139,20 @@ a {
 }
 
 .trend__list {
-  max-width: 1220px;
+  max-width: 1660px;
   margin-top: 30px;
   margin-bottom: 64px;
   display: flex;
+  justify-content: center;
  
 }
 
 .trend__item {
-  width: calc(1220px/4);
-  max-height: 320px;
+  width: calc(1660px/4);
+  min-height: 320px;
   display: flex;
   position: relative;
+  align-items: flex-end;
   z-index: 0;
 }
 
@@ -204,11 +206,9 @@ a {
 .trend__text {
   text-transform: uppercase;
   font-family: "OpenSans-Bold", Arial, sans-serif;
-  width: 70%;
   border: 3px solid #b59f5b;
   margin: auto 20px 10px 20px;
-  padding: 35px 32px;
-  align-items: flex-end;
+  padding: 36px 30px 0px 33px;
 }
 
 .trend__text__tags {
@@ -597,8 +597,8 @@ aside {
 
 .good__list {
   display: flex;
-  justify-content: space-between;
-}
+  column-gap: 70px;
+ }
 
 .good__item {
   width: calc(1220px/3);
@@ -606,29 +606,29 @@ aside {
   flex-direction: column;
 }
 
-.good__item:nth-child(n + 2) {
-  margin-left: 110px;
+.good__image {
+  max-height: 204px;
+  background-color: #eff6f1;
+  margin: 25px 0px 0 28px;
+  align-items: center;
+
 }
 
-.good__image {
-  margin-top: 25px;
-  max-width: 300px;
-  height: 204px;
-  background-color: #eff6f1;
-}
 
 .good__content {
-  margin: -25px 0 0 0;
+  margin-top: -40px;
   border: 3px solid #b59f5b;
   padding: 20px;
-  color: #0f0d0e;
   flex-grow: 1;
+  height: 260px;
 }
+
 
 .good__text__tittle {
   font-size: 20px;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
+  margin-top: 40px;
 }
 
 .good__description {
@@ -645,6 +645,7 @@ aside {
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .price__text {
@@ -661,6 +662,11 @@ aside {
 
 .curprice {
   font-size: 20px;
+}
+
+.curprice__none {
+  font-size: 20px;
+  margin-top: 14px;
 }
 
 .good__btn {
@@ -728,6 +734,40 @@ aside {
   color: #999999;
   text-align: center;
 }
+
+
+.popup__main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   border: 2px solid black;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   z-index: 3;
+ }
+
+ .popup {
+  color: #fff;
+  width: 100%;
+  max-width: 390px;
+  padding: 40px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  text-align: center;
+
+ }
+ 
+ .popup__form {
+   width: 150px;
+   min-height: 200px;
+     border: 2px solid red;
+ }
 
 
 @media (min-width: 769px) and (max-width: 1025px)  {
@@ -912,5 +952,14 @@ aside {
 
   .good__text__tittle {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend-container {
+   width: calc((100% / 2) - 3px);
+  }
+  .title-content {
+    padding: 20px 10px 10px;
   }
 }
