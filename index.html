@@ -10,8 +10,9 @@
   <header class="main__head">
     <div class="header">
       <div class="head">
-        <div class="head__logo">
-          <a href="#0"><img src="svg/noemi-logo.svg" alt="Логотип"></a>
+          <a href="#0"><img class="head__logo" src="../Diplom 2/svg/noemi-logo.svg" alt="Логотип"></a>
+        <div class="head__hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.53333,9.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g></svg>
         </div>
         <nav>
           <ul class="head__menu">
@@ -303,65 +304,86 @@
     <div class="good__list">
      
       <article class="good__item">
-      <div>
-        <img class="good__image" src="img/shop-item-desk1.jpg" alt="Подушка с принтом">
+        <picture>
+          <source 
+          media="(min-width: 1200px)"
+          srcset="img/shop-item-desk1.jpg">
+          <source 
+          media="(min-width: 641px) and (max-width: 1199px)"
+          srcset="img/shop-item-tablet1.jpg">
+          <source 
+          media="(max-width: 640px)"
+          srcset="img/shop-item-mobile1.jpg">
+          <img class="good__image" src="img/shop-item-desk1.jpg" alt="Подушка с принтом">
+        </picture>
           <div class="good__content">
           <h2 class="good__text__tittle"><a href="#">Подушки на диван</a></h2>
-          <div class="good__description">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="link">здесь.</a>
-          </div>
+          <p class="good__description">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="link">здесь.</a></p>
           <div class="good__price">
             <div class="price__text">
               <p class="oldprice">1000 Р</p>
               <p class="curprice">800 Р</p>
             </div>
-            <button class="good__btn">
-              <span>В магазин</span>
-            </button>
+            <a href="#0" class="good__btn">В магазин</a>
           </div>
         </div>
-      </div>
     </article>
   
     <article  class="good__item">
-    <div>
-        <img class="good__image" src="img/shop-item-desk2.jpg" alt="Подушка с принтом"> 
-        <div class="good__content">
+      <picture >
+        <source 
+        media="(min-width: 1200px)"
+        srcset="img/shop-item-desk2.jpg">
+        <source 
+        media="(min-width: 641px) and (max-width: 1199px)"
+        srcset="img/shop-item-tablet2.jpg">
+        <source 
+        media="(max-width: 640px)"
+        srcset="img/shop-item-mobile2.jpg">
+        <img class="good__image" src="/img/shop-item-desk2.jpg" alt="Зайчик">
+      </picture> 
+              <div class="good__content">
           <h2 class="good__text__tittle"><a href="#">Кукла "Зайчик"</a></h2>
-          <div class="good__description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="link">весенняя серия постов</a>в блоге и несколько подкастов.</div>
+          <p class="good__description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="link">весенняя серия постов </a>в блоге и несколько подкастов.</p>
           <div class="good__price">
             <div class="price__text">
              <p class="curprice__none">3500 Р</p>
             </div>
-            <button class="good__btn">
-              <span>В магазин</span>
-            </button>
+            <a href="#0" class="good__btn">В магазин</a>
           </div>
         </div>
-      </div>
-    </article>  
+      </article>  
   
     <article  class="good__item">
-    <div>
-      <img class="good__image" src="img/shop-item-desk3.jpg" alt="Подушка с принтом">  
+      <picture>
+        <source 
+        media="(min-width: 1200px)"
+        srcset="img/shop-item-desk3.jpg">
+        <source 
+        media="(min-width: 641px) and (max-width : 1199px)"
+        srcset="img/shop-item-tablet3.jpg">
+        <source 
+        media="(max-width: 640px)"
+        srcset="img/shop-item-mobile3.jpg">
+        <img class="good__image" src="img/shop-item-desk3.jpg" alt="Ваза">
+      </picture>   
       <div class="good__content">
           <h2 class="good__text__tittle"><a href="#">Шестиугольная рамка</a></h2>
-          <div class="good__description">Необычная рамка для украшения дома из видео<a href="#" class="link"> «Как сделать рамку из подручных средств за 30 минут</a></div>
-  
-          <div class="good__price">
+          <p class="good__description">Необычная рамка для украшения дома из видео<a href="#" class="link"> "Как сделать рамку из подручных средств за 30 минут"</a></p>
+            <div class="good__price">
             <div class="price__text">
               <p class="oldprice">500 Р</p>
               <p class="curprice">400 Р</p>
             </div>
-            <button class="good__btn">
-              <span>В магазин</span>
-            </button>
+          <a href="#0" class="good__btn">В магазин</a>
           </div>
         </div>
       </div>
-    </div>
   </article>  
   </section>
-  
+
+
+   <!--ПОДВАЛ-->
   <footer class="footer">
     <ul class="social">
       <li class="social__item dribble"><a href="#0"><span class="visually-hidden">Dribble</span></a></li>
@@ -371,7 +393,8 @@
     <h2 class="footer_cpr"><a href="#0">Copyright © 2009–2019 City Blog LLC.</a></h2>
   </footer>
 
-
+  
+ <!--МОДАЛЬНОЕ ОКНО-->
   <div class="popup__main">
     <div class="popup">
       <div class="popup__content">
